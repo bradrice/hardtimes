@@ -1,68 +1,240 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 5, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
+/* common elements to all breakpoints */
+/* line 3, ../scss/main.scss */
+body {
+  font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-/* line 22, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
-html {
-  line-height: 1;
+/* line 7, ../scss/main.scss */
+header {
+  background-color: #2b3e50;
+}
+/* line 10, ../scss/main.scss */
+header span.tool-item {
+  color: #fff;
+}
+/* line 12, ../scss/main.scss */
+header span.tool-item a {
+  text-decoration: none;
+  color: #fff;
 }
 
-/* line 24, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
-ol, ul {
-  list-style: none;
-}
-
-/* line 26, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* line 28, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
-
-/* line 30, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
-q, blockquote {
-  quotes: none;
-}
-/* line 103, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
-
-/* line 32, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
-a img {
+/* line 19, ../scss/main.scss */
+a.btn-default {
+  background-color: #27ad60;
+  color: #fff;
+  padding: 6px 8px;
+  margin: 8px;
   border: none;
 }
 
-/* line 116, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-  display: block;
+/* line 27, ../scss/main.scss */
+.navbar {
+  border-radius: 0px;
+}
+
+/* line 31, ../scss/main.scss */
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+}
+
+/* line 35, ../scss/main.scss */
+.navbar-default {
+  background-color: #243340;
+  border: none;
+}
+/* line 38, ../scss/main.scss */
+.navbar-default a.btn-default {
+  background-color: #27ad60;
+  padding: 6px 8px;
+  margin: 8px 8px 0px 8px;
+  border: none;
+}
+/* line 44, ../scss/main.scss */
+.navbar-default a.btn-default:hover {
+  background-color: #e6e6e6;
+}
+
+/* line 49, ../scss/main.scss */
+navbar-nav > a:hover {
+  color: #abaaab;
+}
+
+/* line 53, ../scss/main.scss */
+li.active > a {
+  color: #abaaab;
+  background-color: #243340;
+}
+
+/* line 58, ../scss/main.scss */
+.navbar-default .navbar-nav > li > a:hover {
+  color: #abaaab;
+}
+
+/* line 62, ../scss/main.scss */
+.navbar-default .navbar-nav > .active > a, .navbar-default, .navbar-default .navbar-nav > .active > a:focus {
+  background-color: #243340;
+  color: #fff;
+}
+
+/* line 67, ../scss/main.scss */
+.navbar-default .navbar-nav > li > a.btn-default:hover {
+  background-color: #e6e6e6;
+  color: #000;
+}
+
+/* line 72, ../scss/main.scss */
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover {
+  background-color: #2b3e50;
+}
+
+/* line 76, ../scss/main.scss */
+.navbar-default .navbar-nav > .active > a:hover {
+  color: #27ad60;
+}
+
+/* line 80, ../scss/main.scss */
+footer {
+  background-color: #2b3e50;
+  color: #fff;
+}
+
+@media (min-width: 992px) {
+  /* line 3, ../scss/_desktop.scss */
+  div#logo {
+    margin: 1em;
+  }
+
+  /* line 7, ../scss/_desktop.scss */
+  div#tools {
+    margin: 3em 1em 1em;
+    float: right;
+  }
+  /* line 11, ../scss/_desktop.scss */
+  div#tools span.tool-item {
+    color: #fff;
+    padding: .5em;
+  }
+  /* line 15, ../scss/_desktop.scss */
+  div#tools span.tool-item a:hover {
+    color: #abaaab;
+    text-decoration: underline;
+  }
+
+  /* line 21, ../scss/_desktop.scss */
+  .nav > li > a {
+    padding: 10px 20px;
+  }
+
+  /* typography */
+  /* line 27, ../scss/_desktop.scss */
+  h1, h2, h3, h4, h5 {
+    font-weight: 600;
+  }
+
+  /* line 31, ../scss/_desktop.scss */
+  h1 {
+    font-size: 2em;
+  }
+
+  /* line 35, ../scss/_desktop.scss */
+  h2 {
+    font-size: 1.8em;
+  }
+
+  /* line 38, ../scss/_desktop.scss */
+  h3 {
+    font-size: 1.6em;
+  }
+
+  /* line 42, ../scss/_desktop.scss */
+  h4 {
+    font-size: 1.4em;
+  }
+
+  /* line 46, ../scss/_desktop.scss */
+  h5 {
+    font-size: 1.2em;
+  }
+
+  /* footer */
+  /* line 52, ../scss/_desktop.scss */
+  footer ul {
+    padding: 0px;
+  }
+  /* line 54, ../scss/_desktop.scss */
+  footer ul li {
+    list-style: none;
+  }
+  /* line 57, ../scss/_desktop.scss */
+  footer ul li > a {
+    color: #fff;
+  }
+  /* line 60, ../scss/_desktop.scss */
+  footer ul li > a:hover {
+    color: #abaaab;
+  }
+}
+@media (max-width: 991px) {
+  /* line 3, ../scss/_mobile.scss */
+  div#logo {
+    margin: .5em;
+  }
+
+  /* line 8, ../scss/_mobile.scss */
+  div#tools {
+    margin: 1em 1em 1em;
+  }
+  /* line 11, ../scss/_mobile.scss */
+  div#tools span.tool-item {
+    color: #fff;
+    padding: .5em;
+  }
+
+  /* typography */
+  /* line 19, ../scss/_mobile.scss */
+  h1, h2, h3, h4, h5 {
+    font-weight: 600;
+  }
+
+  /* line 23, ../scss/_mobile.scss */
+  h1 {
+    font-size: 1.8em;
+  }
+
+  /* line 27, ../scss/_mobile.scss */
+  h2 {
+    font-size: 1.6em;
+  }
+
+  /* line 30, ../scss/_mobile.scss */
+  h3 {
+    font-size: 1.4em;
+  }
+
+  /* line 34, ../scss/_mobile.scss */
+  h4 {
+    font-size: 1.2em;
+  }
+
+  /* line 38, ../scss/_mobile.scss */
+  h5 {
+    font-size: 1em;
+  }
+
+  /* line 42, ../scss/_mobile.scss */
+  footer ul {
+    padding: 0px;
+  }
+  /* line 44, ../scss/_mobile.scss */
+  footer ul li {
+    list-style: none;
+  }
+  /* line 47, ../scss/_mobile.scss */
+  footer ul li > a {
+    color: #fff;
+  }
+  /* line 50, ../scss/_mobile.scss */
+  footer ul li > a:hover {
+    color: #abaaab;
+  }
 }

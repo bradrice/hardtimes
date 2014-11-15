@@ -1,0 +1,66 @@
+@media (min-width: 992px) {
+	
+div#logo {
+	margin: 1em;
+}
+
+div#tools {
+	margin: 3em 1em 1em;
+	float: right;
+
+	span.tool-item {
+	color: #fff;
+	padding: .5em;
+}
+	span.tool-item a:hover {
+		color: #abaaab;
+		text-decoration: underline;
+	}
+}
+
+.nav>li>a {
+	padding: 10px 20px;
+}
+
+/* typography */
+
+h1, h2, h3, h4, h5 {
+	font-weight: 600;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.8em;
+}
+h3 {
+	font-size: 1.6em;
+}
+
+h4 {
+	font-size: 1.4em;
+}
+
+h5 {
+	font-size: 1.2em;
+}
+
+/* footer */
+
+footer ul {
+	padding: 0px;
+	li {
+		list-style: none;
+	}
+	li>a {
+		color: #fff;
+	}
+	li>a:hover {
+		color: #abaaab;
+	}
+}
+
+
+}

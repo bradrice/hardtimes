@@ -1,0 +1,88 @@
+/* common elements to all breakpoints */
+
+body {
+	font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+header {
+	background-color: #2b3e50;
+
+	span.tool-item {
+	color: #fff;
+		a {
+			text-decoration: none;
+			color: #fff;
+		}
+	}
+}
+
+a.btn-default {
+	background-color: #27ad60;
+	color: #fff;
+		padding: 6px 8px;
+		margin: 8px;
+		border: none;
+}
+
+.navbar {
+	border-radius: 0px;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #fff;
+}
+
+.navbar-default {
+		background-color: #243340;
+	border: none;
+	a.btn-default {
+		background-color: #27ad60;
+		padding: 6px 8px;
+		margin: 8px 8px 0px 8px;
+		border: none;
+		}
+	a.btn-default:hover {
+		background-color: #e6e6e6;
+		}
+	}
+
+navbar-nav>a:hover {
+	color: #abaaab;
+}
+
+li.active>a {
+	color: #abaaab;
+	background-color: #243340;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+	color: #abaaab;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default, .navbar-default .navbar-nav>.active>a:focus {
+		background-color: #243340;
+		color: #fff;
+	}
+
+.navbar-default .navbar-nav > li > a.btn-default:hover {
+	background-color: #e6e6e6;
+	color: #000;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover {
+	background-color: #2b3e50;
+}
+
+.navbar-default .navbar-nav > .active > a:hover {
+	color: #27ad60;
+}
+
+footer {
+	background-color: #2b3e50;
+	color: #fff;
+}
+
+
+@import 'desktop';
+@import 'mobile';
+

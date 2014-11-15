@@ -1,0 +1,55 @@
+@media (max-width: 991px) {
+	
+	div#logo {
+	margin: .5em;
+	}
+
+
+	div#tools {
+	margin: 1em 1em 1em;
+
+		span.tool-item {
+		color: #fff;
+		padding: .5em;
+		}
+	}
+
+	/* typography */
+
+h1, h2, h3, h4, h5 {
+	font-weight: 600;
+}
+
+h1 {
+	font-size: 1.8em;
+}
+
+h2 {
+	font-size: 1.6em;
+}
+h3 {
+	font-size: 1.4em;
+}
+
+h4 {
+	font-size: 1.2em;
+}
+
+h5 {
+	font-size: 1em;
+}
+
+footer ul {
+	padding: 0px;
+	li {
+		list-style: none;
+	}
+	li>a {
+		color: #fff;
+	}
+	li>a:hover {
+		color: #abaaab;
+	}
+}
+
+}

@@ -14,7 +14,19 @@ div#tools {
 }
 	span.tool-item a:hover {
 		color: #abaaab;
-		text-decoration: underline;
+		text-decoration: underline;	
+	}
+}
+
+
+div#main-body {
+background-image: url('../images/home_screen.jpg');
+	background-repeat: no-repeat;
+	background-position: 0% 0%;
+	
+	.homescreen {
+		margin-top: 5em;
+		min-height: 645px;
 	}
 }
 
@@ -25,18 +37,19 @@ div#tools {
 /* typography */
 
 h1, h2, h3, h4, h5 {
-	font-weight: 600;
+	font-weight: 400;
+	margin: .5em 0em 1em;
 }
 
 h1 {
-	font-size: 2em;
+	font-size: 2.8em;
 }
 
 h2 {
-	font-size: 1.8em;
+	font-size: 2.2em;
 }
 h3 {
-	font-size: 1.6em;
+	font-size: 1.8em;
 }
 
 h4 {
@@ -47,9 +60,40 @@ h5 {
 	font-size: 1.2em;
 }
 
+.jumbotron p.faq {
+	font-size: .925em;
+}
+
+span#down {
+	margin-left: .5em;
+	font-weight: bold;
+}
+
+/* specialized */
+div#q {
+	width: 54px;
+	height: 56px;
+	background-image: url('../images/q_a.png');
+	background-repeat: no-repeat;
+	margin-right: 12px;
+}
+
+div#a {
+	width: 54px;
+	height: 56px;
+	background-image: url('../images/q_a.png');
+	background-repeat: no-repeat;
+	background-position: 0 -80px;
+	margin-right: 12px;
+}
+
 /* footer */
 
-footer ul {
+footer {
+	padding: 1em;
+	margin-top: 1em;
+
+	 ul {
 	padding: 0px;
 	li {
 		list-style: none;
@@ -59,6 +103,7 @@ footer ul {
 	}
 	li>a:hover {
 		color: #abaaab;
+	}
 	}
 }
 

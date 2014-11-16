@@ -2,6 +2,8 @@
 
 body {
 	font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 160%;
 }
 
 header {
@@ -16,7 +18,13 @@ header {
 	}
 }
 
-a.btn-default {
+/* colors */
+.primary {
+	background-color: #2b3e50;
+	color: #fff;
+}
+
+.btn-default {
 	background-color: #27ad60;
 	color: #fff;
 		padding: 6px 8px;
@@ -26,6 +34,7 @@ a.btn-default {
 
 .navbar {
 	border-radius: 0px;
+	margin-bottom: 0px;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -77,9 +86,21 @@ li.active>a {
 	color: #27ad60;
 }
 
+/* elements */
+
 footer {
 	background-color: #2b3e50;
 	color: #fff;
+}
+
+ul {
+	padding: 0px;
+	margin-top: 1em;
+	list-style-position: inside;
+}
+
+p {
+	margin-top: 1em;
 }
 
 

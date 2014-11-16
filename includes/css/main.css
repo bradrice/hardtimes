@@ -2,24 +2,33 @@
 /* line 3, ../scss/main.scss */
 body {
   font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 160%;
 }
 
-/* line 7, ../scss/main.scss */
+/* line 9, ../scss/main.scss */
 header {
   background-color: #2b3e50;
 }
-/* line 10, ../scss/main.scss */
+/* line 12, ../scss/main.scss */
 header span.tool-item {
   color: #fff;
 }
-/* line 12, ../scss/main.scss */
+/* line 14, ../scss/main.scss */
 header span.tool-item a {
   text-decoration: none;
   color: #fff;
 }
 
-/* line 19, ../scss/main.scss */
-a.btn-default {
+/* colors */
+/* line 22, ../scss/main.scss */
+.primary {
+  background-color: #2b3e50;
+  color: #fff;
+}
+
+/* line 27, ../scss/main.scss */
+.btn-default {
   background-color: #27ad60;
   color: #fff;
   padding: 6px 8px;
@@ -27,75 +36,89 @@ a.btn-default {
   border: none;
 }
 
-/* line 27, ../scss/main.scss */
+/* line 35, ../scss/main.scss */
 .navbar {
   border-radius: 0px;
+  margin-bottom: 0px;
 }
 
-/* line 31, ../scss/main.scss */
+/* line 40, ../scss/main.scss */
 .navbar-default .navbar-nav > li > a {
   color: #fff;
 }
 
-/* line 35, ../scss/main.scss */
+/* line 44, ../scss/main.scss */
 .navbar-default {
   background-color: #243340;
   border: none;
 }
-/* line 38, ../scss/main.scss */
+/* line 47, ../scss/main.scss */
 .navbar-default a.btn-default {
   background-color: #27ad60;
   padding: 6px 8px;
   margin: 8px 8px 0px 8px;
   border: none;
 }
-/* line 44, ../scss/main.scss */
+/* line 53, ../scss/main.scss */
 .navbar-default a.btn-default:hover {
   background-color: #e6e6e6;
 }
 
-/* line 49, ../scss/main.scss */
+/* line 58, ../scss/main.scss */
 navbar-nav > a:hover {
   color: #abaaab;
 }
 
-/* line 53, ../scss/main.scss */
+/* line 62, ../scss/main.scss */
 li.active > a {
   color: #abaaab;
   background-color: #243340;
 }
 
-/* line 58, ../scss/main.scss */
+/* line 67, ../scss/main.scss */
 .navbar-default .navbar-nav > li > a:hover {
   color: #abaaab;
 }
 
-/* line 62, ../scss/main.scss */
+/* line 71, ../scss/main.scss */
 .navbar-default .navbar-nav > .active > a, .navbar-default, .navbar-default .navbar-nav > .active > a:focus {
   background-color: #243340;
   color: #fff;
 }
 
-/* line 67, ../scss/main.scss */
+/* line 76, ../scss/main.scss */
 .navbar-default .navbar-nav > li > a.btn-default:hover {
   background-color: #e6e6e6;
   color: #000;
 }
 
-/* line 72, ../scss/main.scss */
+/* line 81, ../scss/main.scss */
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover {
   background-color: #2b3e50;
 }
 
-/* line 76, ../scss/main.scss */
+/* line 85, ../scss/main.scss */
 .navbar-default .navbar-nav > .active > a:hover {
   color: #27ad60;
 }
 
-/* line 80, ../scss/main.scss */
+/* elements */
+/* line 91, ../scss/main.scss */
 footer {
   background-color: #2b3e50;
   color: #fff;
+}
+
+/* line 96, ../scss/main.scss */
+ul {
+  padding: 0px;
+  margin-top: 1em;
+  list-style-position: inside;
+}
+
+/* line 102, ../scss/main.scss */
+p {
+  margin-top: 1em;
 }
 
 @media (min-width: 992px) {
@@ -120,56 +143,105 @@ footer {
     text-decoration: underline;
   }
 
-  /* line 21, ../scss/_desktop.scss */
+  /* line 22, ../scss/_desktop.scss */
+  div#main-body {
+    background-image: url("../images/home_screen.jpg");
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+  }
+  /* line 27, ../scss/_desktop.scss */
+  div#main-body .homescreen {
+    margin-top: 5em;
+    min-height: 645px;
+  }
+
+  /* line 33, ../scss/_desktop.scss */
   .nav > li > a {
     padding: 10px 20px;
   }
 
   /* typography */
-  /* line 27, ../scss/_desktop.scss */
+  /* line 39, ../scss/_desktop.scss */
   h1, h2, h3, h4, h5 {
-    font-weight: 600;
+    font-weight: 400;
+    margin: .5em 0em 1em;
   }
 
-  /* line 31, ../scss/_desktop.scss */
+  /* line 44, ../scss/_desktop.scss */
   h1 {
-    font-size: 2em;
+    font-size: 2.8em;
   }
 
-  /* line 35, ../scss/_desktop.scss */
+  /* line 48, ../scss/_desktop.scss */
   h2 {
+    font-size: 2.2em;
+  }
+
+  /* line 51, ../scss/_desktop.scss */
+  h3 {
     font-size: 1.8em;
   }
 
-  /* line 38, ../scss/_desktop.scss */
-  h3 {
-    font-size: 1.6em;
-  }
-
-  /* line 42, ../scss/_desktop.scss */
+  /* line 55, ../scss/_desktop.scss */
   h4 {
     font-size: 1.4em;
   }
 
-  /* line 46, ../scss/_desktop.scss */
+  /* line 59, ../scss/_desktop.scss */
   h5 {
     font-size: 1.2em;
   }
 
+  /* line 63, ../scss/_desktop.scss */
+  .jumbotron p.faq {
+    font-size: .925em;
+  }
+
+  /* line 67, ../scss/_desktop.scss */
+  span#down {
+    margin-left: .5em;
+    font-weight: bold;
+  }
+
+  /* specialized */
+  /* line 73, ../scss/_desktop.scss */
+  div#q {
+    width: 54px;
+    height: 56px;
+    background-image: url("../images/q_a.png");
+    background-repeat: no-repeat;
+    margin-right: 12px;
+  }
+
+  /* line 81, ../scss/_desktop.scss */
+  div#a {
+    width: 54px;
+    height: 56px;
+    background-image: url("../images/q_a.png");
+    background-repeat: no-repeat;
+    background-position: 0 -80px;
+    margin-right: 12px;
+  }
+
   /* footer */
-  /* line 52, ../scss/_desktop.scss */
+  /* line 92, ../scss/_desktop.scss */
+  footer {
+    padding: 1em;
+    margin-top: 1em;
+  }
+  /* line 96, ../scss/_desktop.scss */
   footer ul {
     padding: 0px;
   }
-  /* line 54, ../scss/_desktop.scss */
+  /* line 98, ../scss/_desktop.scss */
   footer ul li {
     list-style: none;
   }
-  /* line 57, ../scss/_desktop.scss */
+  /* line 101, ../scss/_desktop.scss */
   footer ul li > a {
     color: #fff;
   }
-  /* line 60, ../scss/_desktop.scss */
+  /* line 104, ../scss/_desktop.scss */
   footer ul li > a:hover {
     color: #abaaab;
   }

@@ -143,68 +143,56 @@ p {
     text-decoration: underline;
   }
 
-  /* line 22, ../scss/_desktop.scss */
-  div#main-body {
-    background-image: url("../images/home_screen.jpg");
-    background-repeat: no-repeat;
-    background-position: 0% 0%;
-  }
-  /* line 27, ../scss/_desktop.scss */
-  div#main-body .homescreen {
-    margin-top: 5em;
-    min-height: 645px;
-  }
-
-  /* line 33, ../scss/_desktop.scss */
+  /* line 21, ../scss/_desktop.scss */
   .nav > li > a {
     padding: 10px 20px;
   }
 
   /* typography */
-  /* line 39, ../scss/_desktop.scss */
+  /* line 27, ../scss/_desktop.scss */
   h1, h2, h3, h4, h5 {
     font-weight: 400;
     margin: .5em 0em 1em;
   }
 
-  /* line 44, ../scss/_desktop.scss */
+  /* line 32, ../scss/_desktop.scss */
   h1 {
     font-size: 2.8em;
   }
 
-  /* line 48, ../scss/_desktop.scss */
+  /* line 36, ../scss/_desktop.scss */
   h2 {
     font-size: 2.2em;
   }
 
-  /* line 51, ../scss/_desktop.scss */
+  /* line 39, ../scss/_desktop.scss */
   h3 {
     font-size: 1.8em;
   }
 
-  /* line 55, ../scss/_desktop.scss */
+  /* line 43, ../scss/_desktop.scss */
   h4 {
     font-size: 1.4em;
   }
 
-  /* line 59, ../scss/_desktop.scss */
+  /* line 47, ../scss/_desktop.scss */
   h5 {
     font-size: 1.2em;
   }
 
-  /* line 63, ../scss/_desktop.scss */
+  /* line 51, ../scss/_desktop.scss */
   .jumbotron p.faq {
     font-size: .925em;
   }
 
-  /* line 67, ../scss/_desktop.scss */
+  /* line 55, ../scss/_desktop.scss */
   span#down {
     margin-left: .5em;
     font-weight: bold;
   }
 
   /* specialized */
-  /* line 73, ../scss/_desktop.scss */
+  /* line 61, ../scss/_desktop.scss */
   div#q {
     width: 54px;
     height: 56px;
@@ -213,7 +201,7 @@ p {
     margin-right: 12px;
   }
 
-  /* line 81, ../scss/_desktop.scss */
+  /* line 69, ../scss/_desktop.scss */
   div#a {
     width: 54px;
     height: 56px;
@@ -224,24 +212,24 @@ p {
   }
 
   /* footer */
-  /* line 92, ../scss/_desktop.scss */
+  /* line 80, ../scss/_desktop.scss */
   footer {
     padding: 1em;
     margin-top: 1em;
   }
-  /* line 96, ../scss/_desktop.scss */
+  /* line 84, ../scss/_desktop.scss */
   footer ul {
     padding: 0px;
   }
-  /* line 98, ../scss/_desktop.scss */
+  /* line 86, ../scss/_desktop.scss */
   footer ul li {
     list-style: none;
   }
-  /* line 101, ../scss/_desktop.scss */
+  /* line 89, ../scss/_desktop.scss */
   footer ul li > a {
     color: #fff;
   }
-  /* line 104, ../scss/_desktop.scss */
+  /* line 92, ../scss/_desktop.scss */
   footer ul li > a:hover {
     color: #abaaab;
   }

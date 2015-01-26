@@ -25,7 +25,7 @@ header {
 }
 
 .btn-default {
-	background-color: #27ad60;
+	background-color: #219855;
 	color: #fff;
 		padding: 6px 8px;
 		margin: 8px;
@@ -45,7 +45,7 @@ header {
 		background-color: #243340;
 	border: none;
 	a.btn-default {
-		background-color: #27ad60;
+		background-color: #219855;
 		padding: 6px 8px;
 		margin: 8px 8px 0px 8px;
 		border: none;
@@ -83,7 +83,7 @@ li.active>a {
 }
 
 .navbar-default .navbar-nav > .active > a:hover {
-	color: #27ad60;
+	color: #219855;
 }
 
 /* elements */
@@ -102,6 +102,20 @@ ul {
 p {
 	margin-top: 1em;
 }
+
+div.leftNav ul {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	background-color: #fff;
+
+	li>a {
+		display: block;
+		padding: 12px;
+		border: 1px solid #abaaab;
+	}
+}
+
 
 
 @import 'desktop';

@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-sm-6">
                 <div id="logo">
-                    <img src="/includes/images/hardtimes.png" alt="Hardtimes" class="src">
+                    <a href="/"><img src="/includes/images/hardtimes.png" alt="Hardtimes" class="img-logo"></a>
                 </div>
             </div>
             <div class="col-sm-6">
@@ -35,14 +35,14 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="/stories/">Stories</a></li>
-        <li><a href="/basics/">Basics</a></li>
-        <li><a href="#">Cancer Facts</a></li>
-        <li><a href="#">Solutions</a></li>
-        <li><a href="/relationships/">Relationships</a></li>
-        <li><a href="#">Attitudes</a></li>
-        <li><a href="/partnersfriends/">Partners</a></li>
-        <li><a href="#" class="btn btn-default">Get Started</a></li>
+        <li #if($VTLSERVLET_URI.contains('stories'))class="active"#end><a href="/stories/">Stories</a></li>
+        <li #if($VTLSERVLET_URI.contains('basics'))class="active"#end><a href="/basics/">Basics</a></li>
+        <li #if($VTLSERVLET_URI.contains('cancer-facts'))class="active"#end><a href="/cancer-facts/">Cancer Facts</a></li>
+        <li #if($VTLSERVLET_URI.contains('solutions'))class="active"#end><a href="/solutions/">Solutions</a></li>
+        <li #if($VTLSERVLET_URI.contains('relationships'))class="active"#end><a href="/relationships/">Relationships</a></li>
+        <li #if($VTLSERVLET_URI.contains('attitudes'))class="active"#end><a href="/attitudes/">Attitudes</a></li>
+        <li #if($VTLSERVLET_URI.contains('partnersfriends'))class="active"#end><a href="/partnersfriends/">Partners</a></li>
+        <li><a href="/get-started/" class="btn btn-default">Get Started</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
     </div>

@@ -1,0 +1,10 @@
+div#main-body {
+background-image: url('/includes/images/home_screen.jpg');
+	background-repeat: no-repeat;
+	background-position: 0% 0%;
+}
+
+div#main-body .homescreen {
+margin-top: 5em;
+		min-height: 645px;
+	}

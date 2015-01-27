@@ -1,26 +1,40 @@
-#set( $list = $navtool.getNav("/") )
-<ul>
-  #foreach($n in $list)
-    <li>
-      <a href='${n.href}'>${n.title}</a>
-      #set($children = $n.children)
-      #if( $children && $children.size() > 0 )
-        <ul>
-          #foreach($ch in $children)
-            <li>
-              #if($ch.active)<strong>#end <a href='${ch.href}'>${ch.title}</a> #if($ch.active)</strong>#end
-              #set($children2 = $ch.children)
-              #if( $children2 && $children2.size() > 0 )
-                <ul>
-                  #foreach($c2 in $children2)
-                    <li>#if($c2.active)<strong>#end <a href='${c2.href}'>${c2.title}</a> #if($c2.active)</strong>#end
-                  #end
-                </ul>
-              #end
-            </li>
-          #end
-        </ul>
-      #end
-    </li>
+#set($folderURL = "$VTLSERVLET_URI.substring(0, $VTLSERVLET_URI.indexOf('/',1))/")
+#set($subNav = $navtool.getNav("$!{folderURL}"))
+
+<div class="list-group sidebar-menu">
+    #if ($EDIT_MODE)
+      #set ($PUBLISH_PERMISSION = $pageAPI.canUserPublish($HTMLPAGE_IDENTIFIER, false))
+      #set ($startFromPath = $nav.getStartFromPath(1, $request))
+      #set ($folder = $folderAPI.findCurrentFolder($startFromPath, $host))
+      #set ($menuId = $folder.inode)
+      <form action="${directorURL}" method="post" name="dot_form_menu_${nav.getFormCount()}" id="dot_form_menu_${nav.getFormCount()}">
+        <input type="hidden" name="cmd" value="orderMenu" />
+        <input type="hidden" name="path" value="$startFromPath" />
+        <input type="hidden" name="hostId" value="${host.identifier}" />
+        <input type="hidden" name="pagePath" value="${VTLSERVLET_URI}" />
+        <input type="hidden" name="referer" value="${VTLSERVLET_URI}" />
+        <input type="hidden" name="startLevel" value="2" />
+        <input type="hidden" name="depth" value="3" />
+        #if ($PUBLISH_PERMISSION)
+            <a href="javascript:document.getElementById('dot_form_menu_${nav.getFormCount()}').submit();" class="btn btn-primary btn-xs normaltip" data-original-title="Reorder Menu">
+            <i class="fa fa-arrow-up"></i> 
+            <i class="fa fa-arrow-down"></i> 
+          </a>
+        #end
+
+      </form>
+      $nav.increaseFormCount()
+    #end
+    #foreach($subMenu in $subNav)
+      <a href="${subMenu.href}" class="list-group-item #if($subMenu.active)active#end">${subMenu.title}</a>
+      #set($children1 = $subMenu.children)
+    #if( $children1.size() > 0 && $subMenu.active)
+      <ul>
+        #foreach($level1 in $children1)
+          <li><a href='${level1.href}'>${level1.title}</a></li>
+        #end
+      </ul>
+    #end
   #end
-</ul>
+    
+ </div>

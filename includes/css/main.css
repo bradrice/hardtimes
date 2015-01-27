@@ -29,7 +29,7 @@ header span.tool-item a {
 
 /* line 27, ../scss/main.scss */
 .btn-default {
-  background-color: #27ad60;
+  background-color: #219855;
   color: #fff;
   padding: 6px 8px;
   margin: 8px;
@@ -54,7 +54,7 @@ header span.tool-item a {
 }
 /* line 47, ../scss/main.scss */
 .navbar-default a.btn-default {
-  background-color: #27ad60;
+  background-color: #219855;
   padding: 6px 8px;
   margin: 8px 8px 0px 8px;
   border: none;
@@ -99,7 +99,7 @@ li.active > a {
 
 /* line 85, ../scss/main.scss */
 .navbar-default .navbar-nav > .active > a:hover {
-  color: #27ad60;
+  color: #219855;
 }
 
 /* elements */
@@ -119,6 +119,20 @@ ul {
 /* line 102, ../scss/main.scss */
 p {
   margin-top: 1em;
+}
+
+/* line 106, ../scss/main.scss */
+div.leftNav ul {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  background-color: #fff;
+}
+/* line 112, ../scss/main.scss */
+div.leftNav ul li > a {
+  display: block;
+  padding: 12px;
+  border: 1px solid #abaaab;
 }
 
 @media (min-width: 992px) {

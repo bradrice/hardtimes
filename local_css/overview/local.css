@@ -1,0 +1,13 @@
+div#main-body {
+background-image: url('/includes/images/overview_back.jpg');
+	background-repeat: no-repeat;
+	background-position: 0% 0%;
+background-color: #d7d8d8;
+}
+div#main-body .homescreen {
+margin-top: 5em;
+		min-height: 231px;
+	}
+div.leftNav {
+margin-top: 350px;
+}

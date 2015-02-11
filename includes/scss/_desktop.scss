@@ -81,16 +81,20 @@ footer {
 	padding: 1em;
 	margin-top: 1em;
 
+	h2 {
+	margin-bottom: .85em;
+	}
+
 	 ul {
 	padding: 0px;
 	li {
 		list-style: none;
 	}
 	li>a {
-		color: #fff;
+		color: #adadaf;
 	}
 	li>a:hover {
-		color: #abaaab;
+		color: #fff;
 	}
 	}
 }

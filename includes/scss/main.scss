@@ -1,5 +1,7 @@
 /* common elements to all breakpoints */
 
+$primary: #219855;
+
 body {
 	font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 16px;
@@ -34,7 +36,7 @@ header {
 }
 
 .btn-default {
-	background-color: #219855;
+	background-color: $primary;
 	color: #fff;
 		padding: 6px 8px;
 		margin: 8px;
@@ -54,7 +56,7 @@ header {
 		background-color: #243340;
 	border: none;
 	a.btn-default {
-		background-color: #219855;
+		background-color: $primary;
 		padding: 6px 8px;
 		margin: 8px 8px 0px 8px;
 		border: none;
@@ -92,8 +94,19 @@ li.active>a {
 }
 
 .navbar-default .navbar-nav > .active > a:hover {
-	color: #219855;
+	color: $primary;
 }
+
+.hardtimes--dig-deeper-nav .active {
+   color: $primary;
+}
+
+.hardtimes--dig-deeper-nav .active a {
+   color: $primary;
+   font-style: italic;
+   background-color: #fff;
+}​
+
 
 /* elements */
 
@@ -103,12 +116,25 @@ footer {
 	p, li {
 	color: #adadaf;
 	}
+	 a {
+  	cursor: pointer;  
+  	}
+  }
+
+.hardtimes--dig-deeper-nav .active {
+	color: $primary;
+	a {
+		font-style: italic;
+	}
 }
+	
+
 
 ul {
 	padding: 0px;
 	margin-top: 1em;
-	list-style-position: inside;
+	list-style-position: outside;
+	padding-left: 20px;
 }
 
 p {
@@ -135,6 +161,8 @@ div.leftNav ul {
 .hardtimes--section-title {
   text-transform: uppercase;
 }
+
+
 
 
 

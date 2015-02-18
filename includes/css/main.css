@@ -1,33 +1,44 @@
+@charset "UTF-8";
 /* common elements to all breakpoints */
-/* line 3, ../scss/main.scss */
+/* line 5, ../scss/main.scss */
 body {
   font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 160%;
+  color: #686868;
 }
 
-/* line 9, ../scss/main.scss */
+/* line 12, ../scss/main.scss */
 header {
   background-color: #2b3e50;
 }
-/* line 12, ../scss/main.scss */
+/* line 15, ../scss/main.scss */
 header span.tool-item {
   color: #fff;
 }
-/* line 14, ../scss/main.scss */
+/* line 17, ../scss/main.scss */
 header span.tool-item a {
   text-decoration: none;
   color: #fff;
 }
 
+/* line 24, ../scss/main.scss */
+#logo > p {
+  font-family: 'OpenSans-Light', 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  size: 16px;
+  color: #fff;
+  line: 138%;
+  margin-top: .5em;
+}
+
 /* colors */
-/* line 22, ../scss/main.scss */
+/* line 33, ../scss/main.scss */
 .primary {
   background-color: #2b3e50;
   color: #fff;
 }
 
-/* line 27, ../scss/main.scss */
+/* line 38, ../scss/main.scss */
 .btn-default {
   background-color: #219855;
   color: #fff;
@@ -36,103 +47,146 @@ header span.tool-item a {
   border: none;
 }
 
-/* line 35, ../scss/main.scss */
+/* line 46, ../scss/main.scss */
 .navbar {
   border-radius: 0px;
   margin-bottom: 0px;
 }
 
-/* line 40, ../scss/main.scss */
+/* line 51, ../scss/main.scss */
 .navbar-default .navbar-nav > li > a {
   color: #fff;
 }
 
-/* line 44, ../scss/main.scss */
+/* line 55, ../scss/main.scss */
 .navbar-default {
   background-color: #243340;
   border: none;
 }
-/* line 47, ../scss/main.scss */
+/* line 58, ../scss/main.scss */
 .navbar-default a.btn-default {
   background-color: #219855;
   padding: 6px 8px;
   margin: 8px 8px 0px 8px;
   border: none;
 }
-/* line 53, ../scss/main.scss */
+/* line 64, ../scss/main.scss */
 .navbar-default a.btn-default:hover {
   background-color: #e6e6e6;
 }
 
-/* line 58, ../scss/main.scss */
+/* line 69, ../scss/main.scss */
 navbar-nav > a:hover {
   color: #abaaab;
 }
 
-/* line 62, ../scss/main.scss */
+/* line 73, ../scss/main.scss */
 li.active > a {
   color: #abaaab;
   background-color: #243340;
 }
 
-/* line 67, ../scss/main.scss */
+/* line 78, ../scss/main.scss */
 .navbar-default .navbar-nav > li > a:hover {
   color: #abaaab;
 }
 
-/* line 71, ../scss/main.scss */
+/* line 82, ../scss/main.scss */
 .navbar-default .navbar-nav > .active > a, .navbar-default, .navbar-default .navbar-nav > .active > a:focus {
   background-color: #243340;
   color: #fff;
 }
 
-/* line 76, ../scss/main.scss */
+/* line 87, ../scss/main.scss */
 .navbar-default .navbar-nav > li > a.btn-default:hover {
   background-color: #e6e6e6;
   color: #000;
 }
 
-/* line 81, ../scss/main.scss */
+/* line 92, ../scss/main.scss */
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover {
   background-color: #2b3e50;
 }
 
-/* line 85, ../scss/main.scss */
+/* line 96, ../scss/main.scss */
 .navbar-default .navbar-nav > .active > a:hover {
   color: #219855;
 }
 
-/* elements */
-/* line 91, ../scss/main.scss */
+/* line 100, ../scss/main.scss */
+.hardtimes--dig-deeper-nav .active {
+  color: #219855;
+}
+
+/* line 104, ../scss/main.scss */
+.hardtimes--dig-deeper-nav .active a {
+  color: #219855;
+  font-style: italic;
+  background-color: #fff;
+}
+
+/* line 108, ../scss/main.scss */
+​
 footer {
   background-color: #2b3e50;
   color: #fff;
 }
+/* line 116, ../scss/main.scss */
+​
+footer p, ​
+footer li {
+  color: #adadaf;
+}
+/* line 119, ../scss/main.scss */
+​
+footer a {
+  cursor: pointer;
+}
 
-/* line 96, ../scss/main.scss */
+/* line 124, ../scss/main.scss */
+.hardtimes--dig-deeper-nav .active {
+  color: #219855;
+}
+/* line 126, ../scss/main.scss */
+.hardtimes--dig-deeper-nav .active a {
+  font-style: italic;
+}
+
+/* line 133, ../scss/main.scss */
 ul {
   padding: 0px;
   margin-top: 1em;
-  list-style-position: inside;
+  list-style-position: outside;
+  padding-left: 20px;
 }
 
-/* line 102, ../scss/main.scss */
+/* line 140, ../scss/main.scss */
 p {
   margin-top: 1em;
 }
 
-/* line 106, ../scss/main.scss */
+/* line 144, ../scss/main.scss */
 div.leftNav ul {
   margin: 0px;
   padding: 0px;
   list-style-type: none;
   background-color: #fff;
 }
-/* line 112, ../scss/main.scss */
+/* line 150, ../scss/main.scss */
 div.leftNav ul li > a {
   display: block;
   padding: 12px;
   border: 1px solid #abaaab;
+}
+
+/* line 157, ../scss/main.scss */
+.hardtimes--branding {
+  font-style: italic;
+}
+
+/* line 161, ../scss/main.scss */
+.hardtimes--section-title {
+  text-transform: uppercase;
 }
 
 @media (min-width: 992px) {
@@ -232,20 +286,24 @@ div.leftNav ul li > a {
     margin-top: 1em;
   }
   /* line 84, ../scss/_desktop.scss */
+  footer h2 {
+    margin-bottom: .85em;
+  }
+  /* line 88, ../scss/_desktop.scss */
   footer ul {
     padding: 0px;
   }
-  /* line 86, ../scss/_desktop.scss */
+  /* line 90, ../scss/_desktop.scss */
   footer ul li {
     list-style: none;
   }
-  /* line 89, ../scss/_desktop.scss */
+  /* line 93, ../scss/_desktop.scss */
   footer ul li > a {
-    color: #fff;
+    color: #adadaf;
   }
-  /* line 92, ../scss/_desktop.scss */
+  /* line 96, ../scss/_desktop.scss */
   footer ul li > a:hover {
-    color: #abaaab;
+    color: #fff;
   }
 }
 @media (max-width: 991px) {

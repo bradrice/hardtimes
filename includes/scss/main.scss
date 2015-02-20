@@ -104,22 +104,19 @@ li.active>a {
 .hardtimes--dig-deeper-nav .active a {
    color: $primary;
    font-style: italic;
-   background-color: #fff;
-}​
+   background-color: #fff;}
 
-
-/* elements */
+footer p, footer li {
+	color: #adadaf;
+	}
+footer a {
+  	cursor: pointer;  
+  	}
 
 footer {
 	background-color: #2b3e50;
 	color: #fff;
-	p, li {
-	color: #adadaf;
-	}
-	 a {
-  	cursor: pointer;  
-  	}
-  }
+}
 
 .hardtimes--dig-deeper-nav .active {
 	color: $primary;
@@ -127,8 +124,6 @@ footer {
 		font-style: italic;
 	}
 }
-	
-
 
 ul {
 	padding: 0px;
@@ -160,6 +155,65 @@ div.leftNav ul {
 
 .hardtimes--section-title {
   text-transform: uppercase;
+}
+
+span.sw {
+	color: $primary;
+	font-weight: bold;
+}
+
+span.sw:hover {
+	cursor: pointer;
+}
+
+/* see: https://trello.com/c/4tGPm5Ne/16-update-links-in-footer-to-use-pointer-cursor */
+footer a {
+  cursor: pointer;  
+}
+
+
+/*Stuff Jason added */
+/* see: https://trello.com/c/o87aKo7H/44-make-bullet-points-justified */
+.hardtimes--subsection ul li {
+ list-style-position: outside;
+ margin-left: 20px; 
+}
+
+/* @todo: Brad, #219855 is a green color, probably has a scss variable? */
+.hardtimes--dig-deeper-nav .active {
+   color: $primary;
+}
+
+.hardtimes--dig-deeper-nav .active a {
+   color: $primary;
+   font-style: italic;
+   background-color: #fff;
+}
+
+/* https://trello.com/c/H0NrlySv/49-add-breadcrumb-trail */
+.hardtimes--breadcrumb ul li {
+    display: inline;
+    
+}
+
+/* Uppercase the first letter of each breadcrumb section to be uppercase */
+.hardtimes--breadcrumb ul li {
+    text-transform: capitalize;
+}
+
+/* show a slash before each sections of the breadcrumb */
+.hardtimes--breadcrumb ul li:before {
+    content: " / ";
+}
+
+/* but don't show a slash for the first or second breadcrumb section */
+.hardtimes--breadcrumb ul li:first-child:before, .hardtimes--breadcrumb ul li:nth-child(2):before {
+    content: "";
+}
+
+/* hide the first breadcrumb element, which is always Home */
+.hardtimes--breadcrumb ul li:first-child {
+  display: none;
 }
 
 
